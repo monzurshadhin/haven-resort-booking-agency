@@ -1,0 +1,14 @@
+.manage-bookings {
+  margin-top: 100px;
+}
+.booking-title {
+  color: #f05b43;
+  font-weight: 700;
+}
+
+.pending-color {
+  color: goldenrod;
+}
+.approved-color {
+  color: green;
+}

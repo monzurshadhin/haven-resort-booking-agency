@@ -1,0 +1,23 @@
+[
+  {
+    "nId": 1,
+    "img": "https://i.ibb.co/hgX6ZZY/download.jpg",
+    "title": "Top 10 Resorts in bangladesh with details",
+    "writer": "Mr. Nadir",
+    "comments": 16
+  },
+  {
+    "nId": 2,
+    "img": "https://i.ibb.co/SP44f5r/download-1.jpg",
+    "title": "Best Resort with great view in india is open again after covid pendamic",
+    "writer": "Rina Thakur",
+    "comments": 7
+  },
+  {
+    "nId": 3,
+    "img": "https://i.ibb.co/vHctx68/download-2.jpg",
+    "title": "A new Five Star resort is open in maldives recently",
+    "writer": "Dina Jems",
+    "comments": 4
+  }
+]

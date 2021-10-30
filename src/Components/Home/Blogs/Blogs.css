@@ -1,0 +1,10 @@
+.img-section img {
+  height: 250px;
+}
+.blog-body {
+  height: 150px;
+}
+.fa-user,
+.fa-comment {
+  color: #f05b43;
+}

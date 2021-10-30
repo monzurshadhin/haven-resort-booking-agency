@@ -1,0 +1,56 @@
+[
+  {
+    "sId": 1,
+    "img": "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzb3J0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "name": "Fusion Resort",
+    "country": "Indonesia",
+    "description": "Enjoy waterfront access, spacious suites & majestic sunsets at FUSION Resort.1,2, and 3 Bedroom Suites. On-Site Entertainment. Waterfront Hotel.",
+    "time": "2 Days/ 1 Night",
+    "price": 480
+  },
+  {
+    "sId": 2,
+    "img": "https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cmVzb3J0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "name": "Perl Resort & Spa",
+    "country": "UAE",
+    "description": "Pearl Hotel & Spa located in the Northern Emirates of UAE. Enjoy luxurious oceanfront accommodations,full service spa, free wireless internet",
+    "time": "4 Days/ 3 Night",
+    "price": 650
+  },
+  {
+    "sId": 3,
+    "img": "https://images.unsplash.com/photo-1561501878-aabd62634533?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmVzb3J0c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "name": "Six Seasons Resort",
+    "country": "Vietnam",
+    "description": "To complement the scenic view and elegant decor, we furnish all Deluxe rooms with the latest technology including LED Smart Television sets",
+    "time": "3 Days/ 2 Night",
+    "price": 480
+  },
+  {
+    "sId": 4,
+    "img": "https://images.unsplash.com/photo-1610641818989-c2051b5e2cfd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHJlc29ydHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "name": "Fusion Resort",
+    "country": "Vietnam",
+    "description": "FLC Luxury Resort, 649 hotel rooms and suites with modern equipment and first-class amenities. By combining true Vietnamese traditional values.",
+    "time": "2 Days/ 1 Night",
+    "price": 580
+  },
+  {
+    "sId": 5,
+    "img": "https://images.unsplash.com/photo-1561811358-21aef14f0551?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHJlc29ydHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "name": "Romana Resort & Spa",
+    "country": "Thailand",
+    "description": "Surrounded by mountains and overlooking the golden sand beaches, Romana Resort & Spa blends Italian style with Asian hospitality.",
+    "time": "6 Days/ 5 Night",
+    "price": 790
+  },
+  {
+    "sId": 6,
+    "img": "https://images.unsplash.com/photo-1540541338287-41700207dee6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJlc29ydHN8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+    "name": "beach river resort ",
+    "country": "Itali",
+    "description": "Offering an outdoor pool and a private beachfront, Blues River Resort.80 boat slips and wave-runner ports.Free WiFi access is available in public areas",
+    "time": "4 Days/ 3 Night",
+    "price": 510
+  }
+]

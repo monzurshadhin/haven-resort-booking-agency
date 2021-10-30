@@ -1,0 +1,10 @@
+.swiper-card-img {
+  border-radius: 50%;
+}
+.review-card {
+  cursor: pointer;
+}
+
+.review-card h5 {
+  color: #f05b43;
+}

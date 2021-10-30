@@ -1,0 +1,27 @@
+.navbar-section {
+  background-color: #252c41;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white !important;
+  font-size: 18px;
+}
+.logo {
+  font-size: 25px;
+  color: white !important;
+  font-weight: 700;
+}
+.header-btn {
+  outline: none;
+  border: none;
+  padding: 5px 8px;
+  background-color: #f05b43;
+  color: white;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+.active-class {
+  font-weight: 700;
+  border-bottom: 2px solid#f05b43;
+}

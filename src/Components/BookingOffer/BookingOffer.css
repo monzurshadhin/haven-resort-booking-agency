@@ -1,0 +1,24 @@
+.booking-section {
+  margin-top: 150px;
+}
+.booking-form input {
+  line-height: 50px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #f05b43;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+}
+.booking-form textarea {
+  width: 100%;
+  border: 1px solid #f05b43;
+  padding-left: 10px;
+  padding-right: 10px;
+  outline: none;
+}
+.booking-btn {
+  background-color: #f05b43;
+  color: white;
+  font-weight: 700;
+}
