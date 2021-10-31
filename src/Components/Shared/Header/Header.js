@@ -5,7 +5,7 @@ import useAuth from "../../../Hooks/useAuth";
 import "./Header.css";
 
 const Header = () => {
-  const [isActive,setIsActive] = useState('home');
+  const [isActive,setIsActive] = useState('');
   const { user, logOut } = useAuth();
   
   const handleActive = (data) =>{
