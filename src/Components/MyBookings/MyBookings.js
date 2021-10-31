@@ -45,7 +45,7 @@ const MyBookings = () => {
           if (data.deletedCount) {
             console.log(data);
             const remaining = bookings.filter(
-              (appointment) => appointment._id !== id
+              (booking) => booking._id !== id
             );
             setBookings(remaining);
             notify();
