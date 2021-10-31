@@ -17,7 +17,7 @@ const AddOffer = () => {
   } = useForm();
   const onSubmit = (data) => {
       data.sId = offers.length +1;
-    //   console.log(data);
+    // send new added offer data to database 
     fetch("https://shielded-bastion-47032.herokuapp.com/offers", {
         method: "POST",
         headers: {
@@ -43,6 +43,7 @@ const AddOffer = () => {
       <div className="container">
         <div className="add-offer">
             <h3 className="section-title text-center my-4">Add Resort</h3>
+            {/* add resort form  */}
           <form className=" booking-form" onSubmit={handleSubmit(onSubmit)}>
             <div className="row">
               <div className="col-12 col-md-6">
@@ -65,7 +66,7 @@ const AddOffer = () => {
                 
             <input
               {...register("img", { required: true })}
-              placeholder="image"
+              placeholder="image url"
             />
 
             <input

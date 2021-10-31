@@ -11,7 +11,7 @@ import "./MyBookings.css";
 const MyBookings = () => {
   const [bookings, setBookings] = useState([]);
   const { user } = useAuth();
-  const notify = () => toast("Booking Deleted Successfully!");
+  const notify = () => toast("Booking canceled Successfully!");
   useEffect(() => {
     const data = { email: user.email };
     fetch("https://shielded-bastion-47032.herokuapp.com/mybooking", {
@@ -29,12 +29,12 @@ const MyBookings = () => {
     AOS.init();
     },[]);
     
-  //   console.log(bookings);
+ 
 
   const handleDelete = (id) => {
     console.log(id);
 
-    const proceed = window.confirm("are you sure to delete?");
+    const proceed = window.confirm("are you sure to cancel?");
     if (proceed) {
       const url = `https://shielded-bastion-47032.herokuapp.com/booking/delete/${id}`;
       fetch(url, {
@@ -57,7 +57,7 @@ const MyBookings = () => {
     <div>
       <ToastContainer />
 
-      <div className="container manage-bookings">
+      <div className="container manage-bookings mb-5">
         <h2 className="text-center my-4 section-title">
           Your <span>Bookings</span>
         </h2>
@@ -90,7 +90,7 @@ const MyBookings = () => {
                   handleDelete(booking._id);
                 }}
               >
-                Delete
+                Cancel
               </button>
               </Card.Body>
             </Card>

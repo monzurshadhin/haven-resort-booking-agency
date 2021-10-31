@@ -9,7 +9,7 @@ const ManageBooking = () => {
   const [bookings, setBookings] = useState([]);
   const [modifiedCount,setModifiedCount] = useState(0);
   const notify = () => toast("Booking Approved successfully!");
-  const notify1 = () => toast("Booking Deleted successfully!");
+  const notify1 = () => toast("Booking canceled successfully!");
   useEffect(() => {
       fetch('https://shielded-bastion-47032.herokuapp.com/bookings')
       .then(res =>res.json())
@@ -44,7 +44,7 @@ const ManageBooking = () => {
   const handleDelete = (id) => {
     console.log(id);
 
-    const proceed = window.confirm("are you sure to delete?");
+    const proceed = window.confirm("are you sure to cancel?");
     if (proceed) {
       const url = `https://shielded-bastion-47032.herokuapp.com/booking/delete/${id}`;
       fetch(url, {
@@ -110,7 +110,7 @@ const ManageBooking = () => {
                   handleDelete(booking._id);
                 }}
               >
-                Delete
+                Cancel
               </button>
               </div>
               </Card.Body>

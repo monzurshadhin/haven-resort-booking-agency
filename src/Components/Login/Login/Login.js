@@ -82,7 +82,7 @@ const Login = () => {
           
 
             <div className="icon-section">
-             
+             {/* google login button  */}
               <div onClick={handleGoogleLogin} className="d-flex align-items-center google-login pe-2">
                   <img src="https://i.ibb.co/gRXw5VG/google.png" alt="" />
                   <a href="#">Continue with Google</a>
