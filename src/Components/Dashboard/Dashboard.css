@@ -1,0 +1,16 @@
+.dashboard {
+  margin-top: 100px;
+  /* box-sizing: border-box; */
+}
+/* .main-part {
+  padding: 0px;
+}
+*/
+.link-part {
+  background-color: #252c41;
+
+  /* padding-left: 0px; */
+}
+.link-part a {
+  color: white !important;
+}

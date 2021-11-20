@@ -15,10 +15,12 @@ const BookingOffer = () => {
     reset,
     handleSubmit,
     setFocus,
-    watch,
+    
     formState: { errors },
   } = useForm();
   const { user } = useAuth();
+  console.log(user.email);
+  console.log(user);
   // get single data by id 
   useEffect(() => {
     fetch(`https://shielded-bastion-47032.herokuapp.com/selectedOffer/${id}`)

@@ -6,6 +6,7 @@ import "swiper/swiper.min.css";
 import useOffers from "../../../Hooks/useOffers";
 // npm install swiper@6.8.4
 import './Reviews.css';
+
 const Reviews = () => {
   const [reviews ,setReviews] = useState([]);
   const { isLoading } = useOffers();
@@ -40,7 +41,7 @@ const Reviews = () => {
         slidesPerView={1}
         loop={true}
         autoplay={true}
-        navigation
+        navigation={true}
       
         pagination={{ clickable: true }}
         onSlideChange={() => console.log("slide change")}

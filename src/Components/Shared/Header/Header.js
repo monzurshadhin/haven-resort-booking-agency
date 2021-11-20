@@ -37,7 +37,7 @@ const Header = () => {
 
             {user?.displayName ? (
               <>
-               <Nav.Link as={HashLink} to="/addoffer" onClick={()=>handleActive('addResort')} className={isActive==='addResort'?'active-class':''}>
+               {/* <Nav.Link as={HashLink} to="/addoffer" onClick={()=>handleActive('addResort')} className={isActive==='addResort'?'active-class':''}>
                   Add Resort
                 </Nav.Link>
                 <Nav.Link as={HashLink} to="/my-bookings" onClick={()=>handleActive('myBooking')} className={isActive==='myBooking'?'active-class':''}>
@@ -45,6 +45,10 @@ const Header = () => {
                 </Nav.Link>
                 <Nav.Link as={HashLink} to="/manage-bookings" onClick={()=>handleActive('manageResort')} className={isActive==='manageResort'?'active-class':''}>
                   Manage Bookings
+                </Nav.Link> */}
+                
+                <Nav.Link as={HashLink} to="/dashboard" onClick={()=>handleActive('dashboard')} className={isActive==='dashboard'?'active-class':''}>
+                Dashboard
                 </Nav.Link>
                 <Navbar.Text>
                   

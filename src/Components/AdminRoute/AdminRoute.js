@@ -1,11 +1,10 @@
-import React from "react";
 import { Spinner } from "react-bootstrap";
 import { Redirect, Route } from "react-router";
 import useAuth from "../../Hooks/useAuth";
 
-const PrivateRoute = ({ children, ...rest }) => {
-  const { user, isLoading } = useAuth();
-  // console.log(user);
+const AdminRoute = ({ children, ...rest }) => {
+  const { user, admin, isLoading } = useAuth();
+  console.log(user, admin);
   if (isLoading) {
     return (
       <div className="d-flex justify-content-center spinner-section">
@@ -19,19 +18,19 @@ const PrivateRoute = ({ children, ...rest }) => {
     <Route
       {...rest}
       render={({ location }) =>
-        user.displayName ? (
+        user.email && admin ? (
           children
         ) : (
           <Redirect
             to={{
-              pathname: "/login",
+              pathname: "/home",
               state: { from: location },
             }}
-          />
+          ></Redirect>
         )
       }
-    />
+    ></Route>
   );
 };
 
-export default PrivateRoute;
+export default AdminRoute;

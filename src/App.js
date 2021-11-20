@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
-import AddOffer from "./Components/AddOffer/AddOffer";
 import BookingOffer from "./Components/BookingOffer/BookingOffer";
+import Dashboard from "./Components/Dashboard/Dashboard";
 import Home from './Components/Home/Home/Home';
 import Login from "./Components/Login/Login/Login";
-import ManageBooking from "./Components/ManageBooking/ManageBooking";
-import MyBookings from "./Components/MyBookings/MyBookings";
+import Register from "./Components/Login/Register/Register";
 import NotFound from "./Components/NotFound/NotFound";
 import PrivateRoute from "./Components/PrivateRoute/PrivateRoute";
 import Header from './Components/Shared/Header/Header';
@@ -25,21 +24,30 @@ function App() {
           <Route exact path="/home">
           <Home></Home>
           </Route>
-          <PrivateRoute exact path="/addoffer">
+          {/* <PrivateRoute exact path="/addoffer">
           <AddOffer></AddOffer>
-          </PrivateRoute>
+          </PrivateRoute> */}
           <PrivateRoute exact path="/booking/:id">
           <BookingOffer></BookingOffer>
           </PrivateRoute>
-          <PrivateRoute exact path="/my-bookings">
+          {/* <PrivateRoute exact path="/my-bookings">
           <MyBookings></MyBookings>
-          </PrivateRoute>
-          <PrivateRoute exact path="/manage-bookings">
+          </PrivateRoute> */}
+          {/* <PrivateRoute exact path="/manage-bookings">
           <ManageBooking></ManageBooking>
+          </PrivateRoute> */}
+          <PrivateRoute path="/dashboard">
+          <Dashboard></Dashboard>
           </PrivateRoute>
           <Route exact path="/login">
           <Login></Login>
           </Route>
+          <Route exact path="/register">
+          <Register></Register>
+          </Route>
+          {/* <Route exact path="/makeAdmin">
+          <MakeAdmin></MakeAdmin>
+          </Route> */}
           <Route exact path="*">
           <NotFound></NotFound>
           </Route>

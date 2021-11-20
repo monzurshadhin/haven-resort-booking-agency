@@ -1,12 +1,13 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 import { useHistory, useLocation } from 'react-router';
+import { Link } from 'react-router-dom';
 // import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../../Hooks/useAuth';
 import "./Login.css";
 
 const Login = () => {
-    const { signInUsingGoogle, setIsLoading, setUser,loginProcess,handleEmail,handlePassword,setMessage,message,setError,error } = useAuth();
+    const { signInUsingGoogle, setIsLoading, setUser,loginProcess,handleEmail,handlePassword,setMessage,message,setError,error,saveUser } = useAuth();
     const location = useLocation();
     const history = useHistory();
     const redirect_uri = location.state?.from || "/home";
@@ -16,7 +17,7 @@ const Login = () => {
       .then((result) => {
         console.log(result.user);
         setUser(result.user);
-      
+        saveUser(result.user.email,result.user.displayName,'PUT')
         console.log(redirect_uri);
         setMessage("Login Successful");
         setError("");
@@ -79,6 +80,9 @@ const Login = () => {
             <p className="text-success mt-2 text-center">{message}</p>
             <p className="text-danger mt-2 text-center">{error}</p>
 
+            <Link to="/register" className="link">
+              <p>create a new account?</p>
+            </Link>
           
 
             <div className="icon-section">
